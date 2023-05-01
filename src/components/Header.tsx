@@ -20,7 +20,7 @@ export const Header=()=>{
 	const [isError,setIsError]=useState(false)
 	useEffect(()=>{
 		getOneUser(localStorage.getItem('userID'),setUser,setIsError,setIsError)
-	},[])
+	},[isAuth])
 
 	return (
 		<Box sx={{ flexGrow: 1 }}>
